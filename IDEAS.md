@@ -1,8 +1,10 @@
 # Ideas
 ## Standard Librarys
 ### minecraft
-.command
+.commandname
 All of the commands
+ENTITY.name
+ITEM.name
 ## statements
 ```
 if (coins=) {
@@ -20,7 +22,7 @@ make invisible armor stand with tag of [variable name] and tag "variable", name 
 make armor stand in sky invulnarable
 reserve variable name "variable"
 
-int var = 10
+num var = 10
 
 Use invisible scoreboard variables
 
@@ -34,4 +36,15 @@ if end == 0 then `==`
 if end > 0 then `<`
 if end < 0 then `>`
 
+# Example Code
+### buycoin.mcs
+```
+get coins from 'stats.mcs'
+if (coins >= 50) {
+    coins -= 50
+    summon(ENTITY.sheep)
+}
 
+
+
+```
